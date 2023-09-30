@@ -1,78 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXT Website</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/566232554e.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="/" id="navbar__logo"><i class="fas fa-gem"></i> NEXT</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links">
-                        Home
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__links">
-                        Tech
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/products.html" class="navbar__links">
-                        Products
-                    </a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="/" class="button">
-                        Sign Up
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Zachary Carlson Portfolio</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+      <header>
+         <div class="logo">
+            <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+               <ul class="nav__list">
+                  <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                  <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                  <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                  <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <section class="intro" id="home">
+         <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Zachary Carlson</strong>
+         </h1>
+         <p class="section__subtitle section__subtitle--intro">Associate Computer System Student</p>
+         <img src="images/pic2.jpg" alt="Man in Suit Holding Diploma" class="intro__img">
+      </section>
 
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>NEXT GENERATION</h1>
-                <h2>TECHNOLOGY</h2>
-                <p>See what makes us different.</p>
-                <button class="main__btn"><a href="/">Get Started</a></button>
+      <section class="my-services" id="services">
+         <h2 class="section__title section__title--services">What I do</h2>
+         <div class="services">
+         <div class="service">
+            <h3>
+               Web Design
+            </h3>
+            <p>
+               I really enjoy building my own computers and creating mobile games with Unity. 
+               Out of these interests, my favorite is web design, especially the coding part. 
+               I've been teaching myself web design since high school, 
+               and I've always found joy in writing code and seeing it come to life in a web browser.
+            </p>
             </div>
-            <div class="main__img--container">
-                <img src="images/pic1.svg" alt="Main Image" id="main__img">
-            </div>
-        </div>
-    </div>
+            <div class="service">
+               <h3>
+                  System Builder
+               </h3>
+               <p>
+                  I've assembled a computer, and I've used it for various activities such as gaming and video editing 
+                  in Adobe Premiere Pro during an earlier attempt at starting a YouTube channel that didn't go so well. 
+                  Since my childhood, I've harbored a deep desire for owning and utilizing a personal computer. 
+                  One of my earliest recollections involving a computer dates back to my sibling showing me how to play checkers. 
+                  Remarkably, even at the age of eight, I found it enjoyable, sparking my enduring passion for all things related to computers.
+               </p>
+               </div>
+               <div class="service">
+                  <h3>
+                     Mobile Unity Developer
+                  </h3>
+                  <p>
+                     If I were to evaluate based on the time invested, 
+                     my experience with Unity primarily comprises following 
+                     a handful of tutorials aimed at creating basic mobile games. Regrettably, 
+                     none of these projects reached a point where I could take be proud of them. Nevertheless, 
+                     I remain genuinely intrigued by the prospect of eventually crafting my own game.
+                  </p>
+                </div>
+            </div>   
+         <a href="work" class="btn">My Work</a>
 
-    <div class="services">
-        <h1>See what the hype is about.</h1>
-        <div class="services__container">
-            <div class="services__card">
-                <h2>Experience Bliss</h2>
-                <p>Ai Powered Technology</p>
-                <button>Get Started</button>
-            </div>
-            <div class="services__card">
-                <h2>Are you Ready?</h2>
-                <p>Take the leap</p>
-                <button>Get Started</button>
-            </div>
-        </div>
-    </div>
-    <script src="app.js"></script>
-</body>
+      </section>
+      <section class="about-me" id="about">
+         <h2 class="section__title section__title--about">Who I am</h2>
+         <p class="section__subtitle section__title--about"></p>
+         <div class="about-me__body">
+            <p>
+               Greetings,
+               Please allow me to introduce myself: I am Zachary, but you can call me Zack. As of 2023, I am the age of 20 years old. 
+               I am currently in my sophomore year at college, where I am diligently working towards an Associate's Degree in Computer Systems. 
+               Another goal I have is to obtain a Mobile App Developer Certificate to further enhance my qualifications.
+               My true passion lies within the realm of coding and the multifaceted world of computer science. 
+               It never ceases to amaze me how I can transform lines of code into fully functional applications. 
+               Currently, I am focused on expanding my professional network and seeking out career opportunities that not only fulfill me but also allow me to gain independence.
+               Beyond my academic and professional endeavors, I indulge in a variety of hobbies. 
+               In order of preference, these include gaming, automotive repair, exploring the culinary arts, and occasional travel.
+               I sincerely appreciate you taking the time to explore my portfolio website and getting to know me better.
+            </p>
+         </div>
+      </section>
+      <section class="my-work" id="work">
+         <h2 class="section__title">My Work</h2>
+         <p class="section__subtitle"></p>
+         <div class="portfolio">
+            <a href="a" class="portfolio__item">
+               <img src="images/pic2.jpg" alt="Man Holding Graduation Cap"> <!--change to photo of other website-->
+            </a>
+         </div>
+      </section>
+      <!--Footer-->
+      <footer class="footer">
+      <a href="mailto:contact@zacharycarlson.site" class="footer-link">Contact@ZacharyCarlson.site</a>
+      <ul class="social-list">
+         <li class="social-list__item"><a class="social-list__link" href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage&_ga=2.110861701.1839567732.1696012334-475705951.1694266999&_gac=1.15296196.1696012334.CjwKCAjw69moBhBgEiwAUFCx2BfP2yzr5ZgdYhkeqE1C4yT_Zm7QnHw90KSOoi22NOPdJdAWEz4htBoC8asQAvD_BwE">Indeed</a></li>
+         <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/zack-carlson-814a51287/">LinkedIn</i></a></li>
+      </ul>
+    </footer>
+   </body>
 </html>
